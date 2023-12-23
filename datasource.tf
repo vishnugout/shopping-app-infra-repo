@@ -8,7 +8,7 @@ data "aws_ami" "latest" {
   }
 
   filter {
-    name   = "tag:project"
+    name   = "tag:Project"
     values = ["${var.project_name}"]
   }
 
