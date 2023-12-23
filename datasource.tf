@@ -8,11 +8,6 @@ data "aws_ami" "latest" {
   }
 
   filter {
-    name   = "state"
-    values = ["available"]
-  }
-
-  filter {
     name   = "tag:project"
     values = ["${var.project_name}"]
   }
